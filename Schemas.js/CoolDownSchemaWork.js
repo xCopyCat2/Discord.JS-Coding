@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
-const cooldownSchemaBeg = new mongoose.Schema({
+const cooldownSchemaWork = new mongoose.Schema({
     UserId: { type: String, required: true },
     LastUsed: { type: Number, required: true }
 });
 
-module.exports = mongoose.model('CooldownBeg', cooldownSchemaBeg);
+module.exports = mongoose.model('CooldownWork', cooldownSchemaWork);
